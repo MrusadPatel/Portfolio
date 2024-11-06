@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script  src="./script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <title>Mrusad Patel</title>
 
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DpKFWkeJ.css">
+    <script type="module" crossorigin src="/Portfolio/assets/index-DkrwH5Mh.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-uHWkEx9p.css">
   </head>
   <body class="bg-black text-white ">
     <header class=" sticky top-2 px-4 bg-black z-50">
@@ -32,18 +34,10 @@
               <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold"><a href="">Contact</a></p>
             </div>
           </div>
-          <!-- <div class=" hidden  sm:visible space-x-10  align-middle my-auto">
-            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Home</p>
-            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">About Me</p>
-            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Skills</p>
-            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Projects</p>
-            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Resume</p>
-            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Contacts</p>
-          </div> -->
         </div>
       </nav>
     </header>
-
+    <!-- HEADER ENDS HERE -->
    
     <!-- HERO SECTION STARTS HERE -->
     <section class=" z-0">
@@ -90,13 +84,12 @@
         <input type="radio" id="radio2" name="slider">
       </div>
     </section>
-
+    <!-- HERO SECTION ENDS HERE -->
 
     <!-- ABOUT ME SECTION STARTS HERE -->
     <section class="mt-20">
-      
-        <div id="about" class="about sm:w-10/12 flex flex-col  sm:flex-row gap-4 mx-auto  justify-center items-start ">
-          <div class="right relative sm:w-1/2 static flex flex-col items-center sm:items-start justify-center  order-1 sm:order-2   mx-5 ">
+        <div id="about" class="about sm:w-10/12 flex flex-col  sm:flex-row gap-4 mx-auto  justify-center align-middle items-center ">
+          <div class="right relative sm:w-1/2  flex flex-col items-center sm:items-start justify-center  order-1 sm:order-2   mx-5 ">
             <p class=" font-sans font-bold z-10  my-2 text-5xl sm:my-4 ">About Me</p>
             <p class="text-base sm:text-lg z-10  font-sans text-neutral-400 my-2  sm:my-4 space-y-8 text-justify  leading-lose">Dedicated and skilled web developer with a strong academic background. Proficient in HTML, CSS, MySQL, Oracle SQL, Java, Python, PHP, and Bootstrap. Recognized for problem-solving abilities, self- confidence, and adaptability. Currently pursuing MCA at S K Patel Institute Of Computer Studies. Demonstrated proficiency through the development of a "Tours & Travels Website" and recognized
               as the 2nd Runner-up in a web development competition using Python Flask.</p>
@@ -109,7 +102,7 @@
               <li class="font-bold">Phone :  <span class="font-normal text-neutral-400">+91 1234567890</span></li>
             </ul>
             <span class="space-x-2 my-2  sm:my-4 ">
-              <button class="rounded-3xl bg-yellow-600 text-black  py-3 px-4 font-mono font-semibold">Download Resume</button>
+              <a href="./Mrusad Patel.pdf" download="Mrusad Patel.pdf"><button class="rounded-3xl bg-yellow-600 text-black  py-3 px-4 font-mono font-semibold">Download Resume</button></a>
             </span>
             <div class="backgroundtext absolute z-0 top-6">
               <p class="text-neutral-800 font-sans font-extrabold text-8xl">About</p>
@@ -120,7 +113,62 @@
           </div>
         </div>
     </section>
+    <!-- ABOUT ME ENDS HERE -->
 
+
+    <!-- CONTACT ME SECTION STARTS HERE -->
+
+        <section class="mt-20">
+          <div id="contact" class="about sm:w-10/12 flex flex-col  sm:flex-row gap-4 mx-auto  justify-center items-center ">
+            <div class="right relative sm:w-1/2 flex flex-col items-center sm:items-start justify-center order-1 sm:order-1   mx-5 ">
+              <p class=" font-sans font-bold z-10  my-2 text-4xl sm:text-5xl sm:my-4 ">Contact With Me</p>
+              <p class=" font-sans font-bold z-10  my-2 text-xl sm:text-3xl sm:my-4 ">Mrusad Patel</p>
+              
+              <ul class=" flex flex-col justify-items-start place-items-start space-y-3 my-3">
+                <li class="font-bold">Email : <span class="font-normal text-neutral-400">mrusadpatel10@gmail.com</span></li>
+                <li class="font-bold">Phone : <span class="font-normal text-neutral-400">+91 1234567890</span></li>
+              </ul>
+              <div class="backgroundtext absolute z-0 top-7">
+                <p class="text-neutral-800 font-sans font-extrabold text-5xl sm:text-8xl">Contact</p>
+              </div>
+            </div>
+            <!-- FORM STARTS HERE -->
+            <div class="left sm:w-1/2 w-11/12 order-2 sm:order-2 mx-5 sm:mx-5   p-4 border-2 rounded-md border-yellow-600">
+              <form class="" id="contactForm" method="post">
+                <div class="mb-4">
+                  <label for="name" class="block  font-semibold mb-2">Name:</label>
+                  <input type="text" id="name" name="name"
+                    class=" border rounded w-full py-2 px-3 bg-neutral-800  leading-tight "
+                    required>
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="block  font-semibold mb-2">Email:</label>
+                  <input type="email" id="email" name="email"
+                    class="border rounded w-full py-2 px-3 bg-neutral-800   leading-tight "
+                    required>
+                </div>
+                <div class="mb-4">
+                  <label for="subject" class="block  font-semibold mb-2">Subject:</label>
+                  <input type="text" id="subject" name="subject"
+                    class="border rounded w-full py-2 px-3 bg-neutral-800   leading-tight "
+                    required>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="block  font-semibold mb-2">Message:</label>
+                  <textarea id="message" name="message"
+                    class="border rounded w-full py-2 px-3 bg-neutral-800   leading-tight "
+                    rows="5" required></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                  <button type="submit"
+                    class="rounded-3xl bg-yellow-600 text-black py-3 px-4 font-mono font-semibold focus:outline-none focus:shadow-outline hover:bg-yellow-700">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+    <!-- CONTACT ME SECTION ENDS HERE  -->
 
     <!-- FOOTER STARTS HERE -->
     <footer class="mt-20">
@@ -190,37 +238,16 @@
           </div>
         </div>
       </div>
-      <hr class="my-5 mx-5 text-neutral-400 sm:w-10/12 mx-auto">
-      <div class="copyright sm:w-10/12 mx-auto text-center flex justify-center">
+      <hr class="my-5 mx-5 text-neutral-400 sm:w-10/12 sm:mx-auto">
+      <div class="copyright mx-5 sm:w-10/12 sm:mx-auto text-center flex justify-center">
         <p class="text-neutral-400 my-2 mx-auto text-justify text-lg font-mono font-medium">Copyright ©2024 All rights
           reserved | This is made by Mrusad Patel</p>
       </div>
     </footer>
+    <!-- FOOTER ENDS HERE -->
 
-    <script>
-      function toggleMenu() {
-        var menuItems = document.getElementById("menuItems");
-        menuItems.classList.toggle("hidden"); // Toggle the 'hidden' class
-        menuItems.classList.toggle("-translate-x-40");
-        menuItems.classList.toggle("translate-y-3");
-      }
 
-      function toggleSlider() {
-        var slider1 = document.getElementById("slider1");
-        var slider2 = document.getElementById("slider2");
-
-        if (slider1.classList.contains("hidden")) {
-          slider1.classList.remove("hidden");
-          slider2.classList.add("hidden");
-        } else {
-          slider1.classList.add("hidden");
-          slider2.classList.remove("hidden");
-        }
-      }
-
-      setInterval(toggleSlider, 5000); // Switch every 5 seconds
-
-    </script>
+   
 
     <script>
       var radio1 = document.getElementById("radio1");
