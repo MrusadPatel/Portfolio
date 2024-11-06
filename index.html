@@ -8,10 +8,10 @@
    
     <title>Mrusad Patel</title>
 
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-g2_QW6VQ.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-D2Kc2rNx.css">
   </head>
   <body class="bg-black text-white ">
-    <header class=" sticky top-0 px-4 bg-black  z-50">
+    <header class=" sticky top-2 px-4 bg-black z-50">
       <nav class="header  sm:w-10/12 mx-auto mt-3 flex justify-center py-4 px-5 align-middle border-2   border-yellow-600 rounded-xl">
         <div class="logo text-3xl font-sans  font-extrabold me-auto">
           Mrusad Patel
@@ -22,7 +22,7 @@
               <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
             </div>
             
-            <div  id="menuItems"  class="menu   transform  -translate-x-72 translate-y-3  sm:-translate-x-0 sm:translate-y-0  flex-col-reverse space-y-5 justify-end  sm:flex sm:flex-row sm:align-middle sm:space-x-10 sm:space-y-2  sm:justify-normal ">
+            <div  id="menuItems"  class="menu   transform  -translate-x-60 translate-y-3 hidden sm:-translate-x-0 sm:translate-y-0  flex-col-reverse space-y-5 justify-end  sm:flex sm:flex-row sm:align-middle sm:space-x-10 sm:space-y-2  sm:justify-normal ">
               <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold"></p>
               <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">Home</p>
               <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">About Me</p>
@@ -72,7 +72,7 @@
           <div class="left sm:w-1/2 flex flex-col items-center sm:items-start justify-center order-2 sm:order-1 mx-5">
             <p class="text-yellow-600 font-mono font-semibold my-2 sm:my-4">HELLO!</p>
             <p class="text-3xl sm:text-5xl font-sans font-extrabold my-2 sm:my-4 space-y-8 leading-lose">I'm a <span
-                class="text-yellow-600">Web <br class="hidden sm:block">Developer</span> based in Ahmedabad</p>
+                class="text-yellow-600">Web <br class="hidden sm:block">Developer</span> <br class=" sm:hidden"> based in Ahmedabad</p>
             
             <span class="space-x-2 my-2 sm:my-4">
               <button class="rounded-3xl bg-yellow-600 text-black py-3 px-4 font-mono font-semibold">Hire Me</button>
@@ -89,15 +89,44 @@
         <input type="radio" id="radio1" name="slider" checked>
         <input type="radio" id="radio2" name="slider">
       </div>
-    
+    </section>
+
+
+    <!-- ABOUT ME SECTION STARTS HERE -->
+    <section class="mt-20">
+      
+        <div class="about sm:w-10/12 flex flex-col  sm:flex-row gap-4 mx-auto  justify-center items-start ">
+          <div class="right relative sm:w-1/2 static flex flex-col items-center sm:items-start justify-center  order-1 sm:order-2   mx-5 ">
+            <p class=" font-sans font-bold z-10  my-2 text-5xl sm:my-4 ">About Me</p>
+            <p class="text-base sm:text-lg z-10  font-sans text-neutral-400 my-2  sm:my-4 space-y-8 text-justify  leading-lose">Dedicated and skilled web developer with a strong academic background. Proficient in HTML, CSS, MySQL, Oracle SQL, Java, Python, PHP, and Bootstrap. Recognized for problem-solving abilities, self- confidence, and adaptability. Currently pursuing MCA at S K Patel Institute Of Computer Studies. Demonstrated proficiency through the development of a "Tours & Travels Website" and recognized
+              as the 2nd Runner-up in a web development competition using Python Flask.</p>
+            
+            <ul class=" flex flex-col justify-items-start place-items-start space-y-3 my-3">
+              <li class="font-bold">Name : <span class="font-normal text-neutral-400"> Mrusad Patel </span></li>
+              <li class="font-bold">Date of Birth :  <span class="font-normal text-neutral-400">10 March 2001 </span></li>
+              <li class="font-bold">Address : <span class="font-normal text-neutral-400"> Ahmedabad, Gujarat, India </span></li>
+              <li class="font-bold">Email :  <span class="font-normal text-neutral-400">mrusadpatel10@gmail.com</span></li>
+              <li class="font-bold">Phone :  <span class="font-normal text-neutral-400">+91 1234567890</span></li>
+            </ul>
+            <span class="space-x-2 my-2  sm:my-4 ">
+              <button class="rounded-3xl bg-yellow-600 text-black  py-3 px-4 font-mono font-semibold">Download Resume</button>
+            </span>
+            <div class="backgroundtext absolute z-0 top-6">
+              <p class="text-neutral-800 font-sans font-extrabold text-8xl">About</p>
+            </div>
+          </div>
+          <div class="left sm:w-1/2 hidden sm:block  order-2 sm:order-1 mx-5">
+            <img class="" src="/Portfolio/assets/artist-white-CN7awocc.png" alt="">
+          </div>
+        </div>
     </section>
 
     <script>
       function toggleMenu() {
         var menuItems = document.getElementById("menuItems");
         menuItems.classList.toggle("hidden"); // Toggle the 'hidden' class
-        menuItems.classList.toggle("-translate-x-72");
-        menuItems.classList.toggle("translate-y-10");
+        menuItems.classList.toggle("-translate-x-40");
+        menuItems.classList.toggle("translate-y-3");
       }
 
       function toggleSlider() {
