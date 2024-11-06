@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Mrusad Patel</title>
+
+  </head>
+  <body class="bg-black text-white ">
+    <header class=" w-11/12 mx-auto sticky top-0 px-4 bg-slate-950">
+      <div class="header flex justify-center py-4 align-middle">
+        <div class="logo text-3xl font-sans  font-extrabold me-auto">
+          Mrusad Patel
+        </div>
+        <div class="right ">
+          <div class="menu ">
+            <div class="hamburger   flex align-top justify-end sm:hidden">
+              <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            
+            <div  id="menuItems"  class="menu  transform  -translate-x-72 translate-y-3  sm:-translate-x-0 sm:translate-y-0  flex-col-reverse space-y-5 justify-end  sm:flex sm:flex-row sm:align-middle sm:space-x-10 sm:space-y-2  sm:justify-normal ">
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold"></p>
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Home</p>
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">About Me</p>
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Skills</p>
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Projects</p>
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Resume</p>
+              <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Contact</p>
+            </div>
+          </div>
+          <!-- <div class=" hidden  sm:visible space-x-10  align-middle my-auto">
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Home</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">About Me</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Skills</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Projects</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Resume</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Contacts</p>
+          </div> -->
+        </div>
+      </div>
+    
+    </header>
+
+   
+
+    <script>
+      function toggleMenu() {
+        var menuItems = document.getElementById("menuItems");
+        menuItems.classList.toggle("hidden"); // Toggle the 'hidden' class
+        menuItems.classList.toggle("-translate-x-72");
+        menuItems.classList.toggle("translate-y-10");
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+  </body>
+</html>
