@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Mrusad Patel</title>
+
+    <link rel="stylesheet" crossorigin href="/assets/index-g2_QW6VQ.css">
+  </head>
+  <body class="bg-black text-white ">
+    <header class=" sticky top-0 px-4 bg-black  z-50">
+      <nav class="header  sm:w-10/12 mx-auto mt-3 flex justify-center py-4 px-5 align-middle border-2   border-yellow-600 rounded-xl">
+        <div class="logo text-3xl font-sans  font-extrabold me-auto">
+          Mrusad Patel
+        </div>
+        <div class="right ">
+          <div class="menu  ">
+            <div class="hamburger   flex align-top justify-end sm:hidden">
+              <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            
+            <div  id="menuItems"  class="menu   transform  -translate-x-72 translate-y-3  sm:-translate-x-0 sm:translate-y-0  flex-col-reverse space-y-5 justify-end  sm:flex sm:flex-row sm:align-middle sm:space-x-10 sm:space-y-2  sm:justify-normal ">
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold"></p>
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">Home</p>
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">About Me</p>
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">Skills</p>
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">Projects</p>
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">Resume</p>
+              <p class="cursor-pointer hover:underline hover:text-yellow-300 font-mono font-semibold">Contact</p>
+            </div>
+          </div>
+          <!-- <div class=" hidden  sm:visible space-x-10  align-middle my-auto">
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Home</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">About Me</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Skills</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Projects</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Resume</p>
+            <p class="cursor-pointer hover:text-yellow-300 font-mono font-semibold">Contacts</p>
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+   
+    <!-- HERO SECTION STARTS HERE -->
+    <section class=" z-0">
+      <!-- SLIDER1 STARTS HERE -->
+      <div class=" hero  mt-3" id="slider1">
+        <div class="slider1 sm:w-10/12 flex flex-col  sm:flex-row gap-4 mx-auto  justify-center items-center ">
+          <div class="left sm:w-1/2  flex flex-col items-center sm:items-start justify-center  order-2 sm:order-1   mx-5 ">
+            <p class="text-yellow-600 font-mono font-semibold my-2  sm:my-4 ">HELLO!</p>
+            <p class="text-3xl sm:text-5xl font-sans  font-extrabold my-2  sm:my-4 space-y-8 leading-lose">I'm <span
+                class="text-yellow-600">MRUSAD <br class="hidden sm:block"> PATEL</span></p>
+            <p class="text-2xl sm:text-4xl font-sans  font-medium my-2  sm:my-4 space-y-8 leading-lose">A Web Developer</p>
+            <span class="space-x-2 my-2  sm:my-4 ">
+              <button class="rounded-3xl bg-yellow-600 text-black  py-3 px-4 font-mono font-semibold">Hire Me</button>
+              <button class="rounded-3xl border-2  py-3 px-4 font-mono font-semibold">My Wrok</button>
+            </span>
+          </div>
+          <div class="right sm:w-1/2   order-1 sm:order-2 mx-5">
+            <img class="" src="/assets/artist-white-CN7awocc.png" alt="">
+          </div>
+        </div>
+      </div>
+    
+      <!-- SLIDER2 SECTION STARTS HERE -->
+      <div class="hero mt-3  hidden" id="slider2">
+        <div class="slider2 sm:w-10/12 flex flex-col sm:flex-row gap-4 mx-auto justify-center items-center">
+          <div class="left sm:w-1/2 flex flex-col items-center sm:items-start justify-center order-2 sm:order-1 mx-5">
+            <p class="text-yellow-600 font-mono font-semibold my-2 sm:my-4">HELLO!</p>
+            <p class="text-3xl sm:text-5xl font-sans font-extrabold my-2 sm:my-4 space-y-8 leading-lose">I'm a <span
+                class="text-yellow-600">Web <br class="hidden sm:block">Developer</span> based in Ahmedabad</p>
+            
+            <span class="space-x-2 my-2 sm:my-4">
+              <button class="rounded-3xl bg-yellow-600 text-black py-3 px-4 font-mono font-semibold">Hire Me</button>
+              <button class="rounded-3xl border-2 py-3 px-4 font-mono font-semibold">My Work</button>
+            </span>
+          </div>
+          <div class="right sm:w-1/2 order-1 sm:order-2 mx-5">
+            <img class="" src="/assets/artist-white-CN7awocc.png" alt="">
+          </div>
+        </div>
+      </div>
+    
+      <div class="slider-controls  sm:w-10/12 mx-auto  flex flex-row justify-center items-center space-x-2">
+        <input type="radio" id="radio1" name="slider" checked>
+        <input type="radio" id="radio2" name="slider">
+      </div>
+    
+    </section>
+
+    <script>
+      function toggleMenu() {
+        var menuItems = document.getElementById("menuItems");
+        menuItems.classList.toggle("hidden"); // Toggle the 'hidden' class
+        menuItems.classList.toggle("-translate-x-72");
+        menuItems.classList.toggle("translate-y-10");
+      }
+
+      function toggleSlider() {
+        var slider1 = document.getElementById("slider1");
+        var slider2 = document.getElementById("slider2");
+
+        if (slider1.classList.contains("hidden")) {
+          slider1.classList.remove("hidden");
+          slider2.classList.add("hidden");
+        } else {
+          slider1.classList.add("hidden");
+          slider2.classList.remove("hidden");
+        }
+      }
+
+      setInterval(toggleSlider, 5000); // Switch every 5 seconds
+
+    </script>
+
+    <script>
+      var radio1 = document.getElementById("radio1");
+      var radio2 = document.getElementById("radio2");
+      var slider1 = document.getElementById("slider1");
+      var slider2 = document.getElementById("slider2");
+
+      radio1.addEventListener("change", function() {
+        slider1.classList.remove("hidden");
+        slider2.classList.add("hidden");
+      });
+
+      radio2.addEventListener("change", function() {
+        slider1.classList.add("hidden");
+        slider2.classList.remove("hidden");
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+  </body>
+</html>
